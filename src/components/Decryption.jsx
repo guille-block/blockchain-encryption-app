@@ -4,12 +4,6 @@ import CryptoJS from 'crypto-js';
 import { retrieveEncryptedData } from '../blockchain/blockchain-interaction';
 import Web3 from 'web3';
 
-
-
-
-
-
-
 function Decryption({ contractAddress,  webSocketRPC}) {
   // State variables
   const [decryptedData, setDecryptedData] = useState('');
@@ -18,11 +12,6 @@ function Decryption({ contractAddress,  webSocketRPC}) {
   const [displayingEncryptedData, setDisplayingEncryptedData] = useState(null);
   const [customDecryptionKey, setCustomDecryptionKey] = useState('');
 
-  // Polygon contract address for data storage
-  //const contractAddress = "0xfE51B21B92ee14fc85090eDe6fB3A28881eCd5e6";
-
-  // Alchemy WebSockets endpoint for the Polygon Mainnet
-  //const webSocketRPC = "wss://polygon-mainnet.g.alchemy.com/v2/v1yRyN8d5t3pKS7XsnFzWHaPCfxv9MAF";
   // Polygon WebSocket provider
   let provider = new ethers.WebSocketProvider(webSocketRPC);
 
@@ -44,7 +33,7 @@ function Decryption({ contractAddress,  webSocketRPC}) {
         const topic0 = ethers.id("NewInformationStored(address,uint256)");
         const filter = {
           fromBlock: "0x2E5ACA0", // Reference Block to start fetching
-          address: "0xfE51B21B92ee14fc85090eDe6fB3A28881eCd5e6",
+          address: contractAddress,
           topics: [topic0, null, null, null]
         };
 

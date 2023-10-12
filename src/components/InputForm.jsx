@@ -4,8 +4,6 @@ import CryptoJS from 'crypto-js';
 import { storeEncryptedData } from '../blockchain/blockchain-interaction';
 import './styles/InputForm.css';
 
-///const contractAddress = "0xfE51B21B92ee14fc85090eDe6fB3A28881eCd5e6";
-
 function InputForm({ signer, contractAddress, encryptionKey }) {
   // State variables
   const [formData, setFormData] = useState({});
