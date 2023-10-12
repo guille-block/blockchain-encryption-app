@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# React Blockchain Data Encryption and Decryption App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based web application that allows users to interact with a smart contract on the Ethereum blockchain to store and retrieve encrypted data. The app includes encryption and decryption features, as well as the ability to view historical events related to data storage.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
 
-In the project directory, you can run:
+## Features
+- Connect your Ethereum wallet (MetaMask) to interact with the Polygon blockchain.
+- Generate an encryption key for data encryption.
+- Store encrypted data on the blockchain.
+- Retrieve and decrypt stored data using a custom decryption key.
+- View historical events related to data storage.
 
-### `npm start`
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/guille-block/blockchain-encryption-app.git
+   ````
+2. Navigate to the project directory:
+   ```bash
+   cd blockchain-encryption-app
+   ````
+3. Install the project dependencies:
+   ```bash
+   npm install
+   ````
+## Usage
+1. Set *.env* file and its variables, you can Use *.env-example*. Make sure you are pointing to the correct contract address
+2. Start developement server:
+   ```bash
+   npm start
+   ````
+3. Open your web browser and navigate to **http://localhost:3000** to use the app.
+4. You can now start using the app. Connect your web3 wallet and generate your encryption key. Once you have this, you will be allowed to encrypt, decrpyt & store data on Polygon!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
+The app consists of the following components:
 
-### `npm test`
+**App**: The main component that manages wallet connection and rendering other components.
+**WalletConnected**: Responsible for displaying connected wallet information and managing data encryption.
+**InputForm**: Allows users to input data, add it to a JSON object, and encrypt the data using an encryption key.
+**Decryption**: Provides the functionality to retrieve and decrypt encrypted data stored on the blockchain.
+   
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   
