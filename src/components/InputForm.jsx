@@ -19,7 +19,7 @@ function InputForm({ signer, contractAddress, encryptionKey }) {
   const handleEncrypt = async () => {
     try {
       const encryptedResult = CryptoJS.AES.encrypt(jsonObject, encryptionKey).toString();
-      //await storeEncryptedData(signer, contractAddress, encryptedResult);
+      await storeEncryptedData(signer, contractAddress, encryptedResult);
       setEncryptedData(encryptedResult);
       setError('');
     } catch (error) {
