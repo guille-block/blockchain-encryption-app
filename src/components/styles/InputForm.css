@@ -1,0 +1,99 @@
+.form-structure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs {
+    padding: 0.3rem;
+}
+
+.json-container {
+  border: 1px solid #ccc; /* Add a border to the container */
+  padding: 10px; /* Add padding to the container */
+  max-height: 300px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds the max height */
+  background-color: #f9f9f9; /* Background color for the container */
+  margin-top: 20px; /* Add margin to separate it from the form */
+}
+  
+  /* Style for the JSON object text */
+.json-text {
+  white-space: pre-wrap; /* Preserve line breaks and wrap text */
+  word-wrap: break-word; /* Allow long words to break and wrap */
+  font-family: 'Courier New', monospace; /* Use a monospace font for consistent spacing */
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #333; /* Text color for better readability */
+  background-color: #fff; /* Background color for the JSON text */
+  border-radius: 4px; /* Add border-radius for a slight border effect */
+  padding: 10px; /* Add padding to the JSON text */
+  line-height: 1.5; /* Adjust line height for readability */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
+}
+
+
+.json-text-encrypted {
+  word-wrap: break-word; /* Allow long words to break and wrap */
+}
+
+.row-structure {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-structure {
+  margin: 0.2rem;
+}
+
+.button-structure-display {
+  margin: 0.5rem;
+}
+
+.pretty-button {
+  background-color: #6480af; /* Background color (adjust as needed) */
+  color: #fff; /* Text color (white) */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+}
+
+.pretty-button:hover {
+  background-color: #303d52; /* Darker background color on hover */
+}
+
+/* Input styling for InputForm */
+.inputs {
+  display: block;
+  margin-bottom: 10px; /* Spacing between input elements */
+}
+
+.inputs label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #303d52; /* Border color (adjust as needed) */
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Text color (adjust as needed) */
+}
+
+/* Focus styles for the input */
+.inputs input:focus {
+  border-color: #303d52; /* Adjust focus border color */
+}
+
+li {
+  margin: 0.5rem;
+}
+
+.input-name {
+  margin: 0.3rem;
+}

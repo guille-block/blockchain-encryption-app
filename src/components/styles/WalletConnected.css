@@ -1,0 +1,38 @@
+/* Container for Encryption and Decryption components */
+.encryption-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Align items to stretch vertically */
+    padding: 20px; /* Adjust the padding as needed */
+    flex-wrap: wrap;
+  }
+  
+  /* Style for Encryption component */
+  .encryption {
+    flex: 1; /* Take up all available space within the container */
+    display: flex; /* Enable flex layout for the Encryption component */
+    flex-direction: column; /* Arrange child elements vertically */
+    padding: 10px; /* Adjust the padding as needed */
+    background-color: rgba(0, 0, 0, 0.2); /* Background color for Encryption component */
+    border-right: 1px solid white; /* Subtle white line */
+    max-width: 50%;
+  }
+  
+  /* Style for Decryption component */
+  .decryption {
+    flex: 1; /* Take up all available space within the container */
+    display: flex; /* Enable flex layout for the Decryption component */
+    flex-direction: column; /* Arrange child elements vertically */
+    padding: 10px; /* Adjust the padding as needed */
+    background-color: rgba(0, 0, 0, 0.2); /* Background color for Decryption component */
+    border-left: 1px solid white; /* Subtle white line */
+    max-width: 50%;
+  }
+  
+  .core-structure {
+    width: -webkit-fill-available;
+  }
+
+  .font-structure {
+    font-size: 1rem;
+  }
