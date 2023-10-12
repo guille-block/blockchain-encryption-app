@@ -1,6 +1,6 @@
-# React Blockchain Data Encryption and Decryption App
+# React Blockchain data encryption and decryption App
 
-This is a React-based web application that allows users to interact with a smart contract on the Ethereum blockchain to store and retrieve encrypted data. The app includes encryption and decryption features, as well as the ability to view historical events related to data storage.
+This is a React-based web application that allows users to interact with a smart contract on the Polygon blockchain to store and retrieve encrypted data. The app includes encryption and decryption features, as well as the ability to view historical events related to data storage.
 
 ## Table of Contents
 - [Features](#features)
@@ -10,7 +10,7 @@ This is a React-based web application that allows users to interact with a smart
 - [Components](#components)
 
 ## Features
-- Connect your Ethereum wallet (MetaMask) to interact with the Polygon blockchain.
+- Connect your Wallet to interact with the Polygon blockchain.
 - Generate an encryption key for data encryption.
 - Store encrypted data on the blockchain.
 - Retrieve and decrypt stored data using a custom decryption key.
