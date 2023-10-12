@@ -109,7 +109,7 @@ function Decryption({ contractAddress,  webSocketRPC}) {
             <p>User: {event.user}</p>
             <p>Id: {event.index}</p>
             {selectedEvent === event ? (
-              <div>
+              <div className='json-container'>
                 <h3>Encrypted Data:</h3>
                 <p className='json-text'>{displayingEncryptedData}</p>
                 <input className="inputs"
@@ -120,7 +120,7 @@ function Decryption({ contractAddress,  webSocketRPC}) {
                 />
                 <button className="pretty-button" onClick={() => handleDecryptData(event)}>Decrypt data</button>
                 {decryptedData && (
-                  <div>
+                  <div className='json-container'>
                     <h3>Decrypted Data:</h3>
                     <pre className='json-text'>{decryptedData}</pre>
                   </div>

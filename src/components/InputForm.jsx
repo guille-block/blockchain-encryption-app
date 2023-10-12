@@ -40,6 +40,7 @@ function InputForm({ signer, contractAddress, encryptionKey }) {
 
   // Function to reset the form
   const handleResetInfo = () => {
+    setFormData({});
     setNewPropertyName('');
     setNewValue('');
     setJsonObject('');
@@ -71,9 +72,9 @@ function InputForm({ signer, contractAddress, encryptionKey }) {
         </div>
       </div>
       {jsonObject && (
-        <div> 
+        <div className='json-container'> 
           <h3>JSON Object:</h3>
-          <pre className="json-text">{jsonObject}</pre>
+            <pre className="json-text">{jsonObject}</pre>
           <div>
             {encryptionKey !== '' ? (
               <button className="pretty-button" onClick={handleEncrypt}>Encrypt Data</button>
@@ -81,9 +82,9 @@ function InputForm({ signer, contractAddress, encryptionKey }) {
               <p className='error-message'>Generate your encryption key</p>
             )}
             {encryptedData && (
-              <div>
+              <div className='json-container'>
                 <h2>Encrypted Data:</h2>
-                <pre className='json-text'>{encryptedData}</pre>
+                    <pre className='json-text'>{encryptedData}</pre>
                 {error && <p className='error-message'>{error}</p>}
               </div>
             )}

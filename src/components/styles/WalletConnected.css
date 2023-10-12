@@ -4,7 +4,8 @@
     justify-content: space-between;
     align-items: stretch; /* Align items to stretch vertically */
     padding: 20px; /* Adjust the padding as needed */
-    flex-wrap: wrap;
+    max-inline-size: fit-content;
+    min-inline-size: -webkit-fill-available;
   }
   
   /* Style for Encryption component */
